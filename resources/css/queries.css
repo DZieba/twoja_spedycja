@@ -1,0 +1,215 @@
+
+
+@media only screen and (max-width: 1000px) {
+    header {
+        height: 130px;
+        transition: 0.5s ease-in-out;
+    }
+    .navbar>li {
+        padding: 10px;
+        text-align: center;
+    }
+    #menuToggle {
+        display: inline-block;
+        position: absolute;
+        margin-top: 72px;
+        border: none;
+        outline: none;
+    }
+
+    #menuToggle input{
+        display: block;
+        width: 40px;
+        height: 33px;
+        position: absolute;
+        top: -7px;
+        left: -3px;
+        cursor: pointer;
+        opacity: 0; /* hide this */
+        z-index: 2; /* and place it over the hamburger */
+        
+    }
+
+    #menuToggle span
+    {
+      display: block;
+      width: 33px;
+      height: 4px;
+      margin-bottom: 5px;
+      position: relative;
+      background:  #178e81;
+      border-radius: 3px;
+      
+      z-index: 1;
+      transform-origin: 4px 0px;
+      
+      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                  background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                  opacity 0.6s ease;
+    }
+
+    #menuToggle  span:nth-last-child(3),
+    #menuToggle  span:nth-last-child(1)
+    {
+        background:  #3bb1c2;
+    }
+
+   
+
+    
+   
+  
+    
+
+
+    #menuToggle input:checked ~ span:nth-last-child(3)
+    {
+      opacity: 1;
+     /* transform: rotate(45deg) translate(0px, 1px);*/
+      transform: rotate(45deg) translate(3px, -3px);
+    /*  background: #201f1f;*/
+    
+    }
+    #menuToggle input:checked ~ span:nth-last-child(1)
+    {
+       /* transform: rotate(-45deg) translate(-3px, -3px);*/
+        transform: rotate(-45deg) translate(3px, 2px);
+
+    }
+  
+    #menuToggle input:checked ~ span:nth-last-child(2)
+    {
+     opacity: 0;
+    }
+    
+  
+
+    
+   
+
+
+
+
+    .main-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar {
+        display: none;
+        margin-top: 40px;
+        flex-direction: column;
+        
+    }
+    .descr {
+        width: 80%;
+    }
+    .offer_wrapper {
+        flex-direction: column;
+    }
+    .offer_wrapper .descr {
+        width: 100%;
+    }
+    
+    footer {
+        height: auto;
+    }
+    .footer_info {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    #map {
+        margin-top: 70px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    section.about_us::after {
+        background-position-y: 0px;
+    }
+    .pricing_form {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 730px) {
+    .descr {
+        width: 100%;
+    }
+    .images_container>figure:first-child,
+    .images_container>figure:nth-child(2) {
+        width: 80%;
+        position: relative;
+        margin: 10px;
+        align-self: center;
+    }
+    section.about_us .container {
+        background-position-x: -200px;
+    }
+    #stock>.container>.descr {
+        width: 100%;
+    }
+    .trucks {
+        width: 90%;
+    }
+    .details .btn-info {
+        width: 55%;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 650px) {
+
+.pricing_form {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+.pricing_form label,
+.pricing_form input {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+
+}
+
+
+@media only screen and (max-width: 500px) {
+    .addition {
+        display: none;
+    }
+    #branding,
+    #branding2 {
+        text-align: center;
+        width: 100%;
+    }
+    section.about_us .container {
+        background-position-x: -500px;
+    }
+    .testimonials {
+        height: 200px;
+    }
+    .images_container>figure:first-child,
+    .images_container>figure:nth-child(2) {
+        width: 100%;
+    }
+    .doccontainer,
+    .pricing_form {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+   
+    .general{
+        flex-direction: column;
+    }
+    .doc_el {
+        width: 60%;
+    }
+    .details .btn-info {
+        width: 65%;
+    }
+}
